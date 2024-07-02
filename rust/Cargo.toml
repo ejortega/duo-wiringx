@@ -1,0 +1,17 @@
+[package]
+name = "rust-wiringx"
+version = "0.1.0"
+edition = "2021"
+
+
+build = "binding_rust/build.rs"
+
+[dependencies]
+anyhow = "1.0.86"
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.69.4"
+
+[lib]
+path = "binding_rust/lib.rs"
